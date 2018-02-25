@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "start": "concurrently \"ng serve --env=dev --proxy-config proxy.conf.json\" \"tsc -w -p server\" \"nodemon ./dist/server/\"",
-    "serve-build": "tsc -p server",
+    "server-build": "tsc -p server",
     "build": "ng build --prod &&  npm run server-build",
     "prod": "ng build --prod --aot &&  npm run server-build"
   },
