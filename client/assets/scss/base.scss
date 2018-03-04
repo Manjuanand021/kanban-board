@@ -1,23 +1,18 @@
 /* BASE - Base Variable file along with starting point Mixins and Placeholders.
 ========================================================================== */
 
-// @import "./globals/_variables.scss";
-// @import "./globals/_mixins.scss";
-// @import "./globals/_placeholders.scss";
+@import "./helpers/variables.scss";
+@import "./layout/ribbon.scss";
+@import "./pages/login.scss";
 
-/* MODULES - Re-usable site elements.
-========================================================================== */
 
-// @import "./globals/_semantic-tags.scss";
-// @import "./globals/_headers.scss";
-// @import "./globals/_paragraph.scss";
-// @import './globals/_button.scss';
 
-/* Applies to all elements on page
-============================================================================*/
-
-// * {
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: border-box;
-// }
+html,
+body{
+    font-family: $font-stack;
+    font-size: $font-size;
+    font-weight: $font-weight-normal;
+    line-height: $line-height;
+    color: $oslo-gray;
+    text-rendering: optimizeLegibility;
+}
