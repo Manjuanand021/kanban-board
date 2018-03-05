@@ -1,21 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app.routing';
 import { FeaturesModule } from './features';
+import { SharedModule } from './shared';
 import { AppComponent } from './root';
+import { LoginComponent } from './login';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
+    SharedModule,
     FeaturesModule
   ],
   providers: [],

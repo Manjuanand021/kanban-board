@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
-import { LoginComponent } from './login';
+import { FeatureRoutingModule } from './feature.routing';
 import { HomeComponent } from './home';
 
 @NgModule({
@@ -11,15 +12,12 @@ import { HomeComponent } from './home';
         CommonModule,
         NgbModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        HttpClientModule,
+        // FeatureRoutingModule
     ],
-    declarations: [
-        LoginComponent,
-        HomeComponent],
-    exports: [
-        LoginComponent,
-        HomeComponent
-    ],
+    declarations: [HomeComponent],
+    exports: [HomeComponent],
     providers: [],
 })
 export class FeaturesModule { }
